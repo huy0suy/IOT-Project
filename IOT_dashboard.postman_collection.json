@@ -1,0 +1,577 @@
+{
+	"info": {
+		"_postman_id": "9d5e85c4-2ac1-4baa-aec5-9ca8e7862eb4",
+		"name": "IOT_dashboard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39032090"
+	},
+	"item": [
+		{
+			"name": "lastest_sensor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.20.10.6:5001/latest_sensor_data?",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"10",
+						"6"
+					],
+					"port": "5001",
+					"path": [
+						"latest_sensor_data"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null,
+							"description": "{\n    \"humidity\": 30.6,\n    \"light\": 919.0,\n    \"temperature\": 27.2,\n    \"timestamp\": \"23/10/2024 06:06:57\"\n}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "lastest_sensor",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.20.10.6:5001/latest_sensor_data?",
+							"protocol": "http",
+							"host": [
+								"172",
+								"20",
+								"10",
+								"6"
+							],
+							"port": "5001",
+							"path": [
+								"latest_sensor_data"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Oct 2024 06:06:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "85"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"humidity\": 30.6,\n    \"light\": 919,\n    \"temperature\": 27.2,\n    \"timestamp\": \"23/10/2024 06:06:57\"\n}"
+				}
+			]
+		},
+		{
+			"name": "sensor_history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.20.10.6:5001/sensor_history",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"10",
+						"6"
+					],
+					"port": "5001",
+					"path": [
+						"sensor_history"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sensor_history",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.20.10.6:5001/sensor_history",
+							"protocol": "http",
+							"host": [
+								"172",
+								"20",
+								"10",
+								"6"
+							],
+							"port": "5001",
+							"path": [
+								"sensor_history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2024 12:19:48 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "901"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"humidity\": 55.2,\n            \"light\": 837,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:27\"\n        },\n        {\n            \"humidity\": 55.2,\n            \"light\": 841,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:30\"\n        },\n        {\n            \"humidity\": 55.1,\n            \"light\": 849,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:33\"\n        },\n        {\n            \"humidity\": 55.1,\n            \"light\": 846,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:36\"\n        },\n        {\n            \"humidity\": 55.3,\n            \"light\": 848,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:39\"\n        },\n        {\n            \"humidity\": 55.2,\n            \"light\": 848,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:42\"\n        },\n        {\n            \"humidity\": 55.2,\n            \"light\": 853,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:45\"\n        },\n        {\n            \"humidity\": 55.2,\n            \"light\": 853,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:48\"\n        },\n        {\n            \"humidity\": 55.1,\n            \"light\": 860,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:51\"\n        },\n        {\n            \"humidity\": 55.1,\n            \"light\": 853,\n            \"temperature\": 34.5,\n            \"timestamp\": \"20/10/2024 02:59:54\"\n        }\n    ],\n    \"limit\": 10,\n    \"page\": 1,\n    \"total_records\": 787\n}"
+				}
+			]
+		},
+		{
+			"name": "control_light",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"command\": \"Led3_off\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5001/control_light",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"control_light"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "control_light",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"command\": \"Led3_off\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5001/control_light",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5001",
+							"path": [
+								"control_light"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Oct 2024 06:08:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Lệnh đã gửi và ghi lại\"\n}"
+				}
+			]
+		},
+		{
+			"name": "light_control_history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.20.10.6:5001/light_control_history",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"10",
+						"6"
+					],
+					"port": "5001",
+					"path": [
+						"light_control_history"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "light_control_history",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.20.10.6:5001/device_control_history",
+							"protocol": "http",
+							"host": [
+								"172",
+								"20",
+								"10",
+								"6"
+							],
+							"port": "5001",
+							"path": [
+								"device_control_history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2024 12:19:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"command\": \"Led3_on\",\n            \"device\": \"LED\",\n            \"timestamp\": \"28/10/2024 12:19:03\"\n        },\n        {\n            \"command\": \"Led3_off\",\n            \"device\": \"LED\",\n            \"timestamp\": \"28/10/2024 12:19:08\"\n        }\n    ],\n    \"limit\": 10,\n    \"page\": 1,\n    \"total_records\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "led?_control_history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.20.10.6:5001/led2_history",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"10",
+						"6"
+					],
+					"port": "5001",
+					"path": [
+						"led2_history"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "led?_control_history",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://172.20.10.6:5001/led2_history",
+							"protocol": "http",
+							"host": [
+								"172",
+								"20",
+								"10",
+								"6"
+							],
+							"port": "5001",
+							"path": [
+								"led2_history"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Oct 2024 06:06:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "334"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"command\": \"Led2_on\",\n        \"timestamp\": \"Tue, 22 Oct 2024 14:28:33 GMT\"\n    },\n    {\n        \"command\": \"Led2_off\",\n        \"timestamp\": \"Tue, 22 Oct 2024 14:28:40 GMT\"\n    },\n    {\n        \"command\": \"Led2_on\",\n        \"timestamp\": \"Tue, 22 Oct 2024 14:39:45 GMT\"\n    },\n    {\n        \"command\": \"Led2_on\",\n        \"timestamp\": \"Tue, 22 Oct 2024 14:39:55 GMT\"\n    },\n    {\n        \"command\": \"Led2_off\",\n        \"timestamp\": \"Tue, 22 Oct 2024 14:40:03 GMT\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "search_filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "light",
+						"value": "860",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "temperature",
+						"value": "0",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5001/search_sensor?light=853",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"search_sensor"
+					],
+					"query": [
+						{
+							"key": "start_time",
+							"value": "2024-10-00 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "end_time",
+							"value": "2024-10-21 23:59:59",
+							"disabled": true
+						},
+						{
+							"key": "temperature",
+							"value": "34.5",
+							"disabled": true
+						},
+						{
+							"key": "light",
+							"value": "853"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search_filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "light",
+								"value": "860",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "temperature",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5001/search_sensor?temperature=34.5&light=853&start_time=2024-10-15 00:00:00&end_time=2024-10-28 23:59:59",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"search_sensor"
+							],
+							"query": [
+								{
+									"key": "temperature",
+									"value": "34.5"
+								},
+								{
+									"key": "light",
+									"value": "853"
+								},
+								{
+									"key": "start_time",
+									"value": "2024-10-15 00:00:00"
+								},
+								{
+									"key": "end_time",
+									"value": "2024-10-28 23:59:59"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 28 Oct 2024 13:23:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "257"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"humidity\": 55.2,\n        \"light\": 853,\n        \"temperature\": 34.5,\n        \"timestamp\": \"20/10/2024 02:59:45\"\n    },\n    {\n        \"humidity\": 55.2,\n        \"light\": 853,\n        \"temperature\": 34.5,\n        \"timestamp\": \"20/10/2024 02:59:48\"\n    },\n    {\n        \"humidity\": 55.1,\n        \"light\": 853,\n        \"temperature\": 34.5,\n        \"timestamp\": \"20/10/2024 02:59:54\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "search_device",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "clear_devicea",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://172.20.10.6:5001/clear_device_history",
+					"protocol": "http",
+					"host": [
+						"172",
+						"20",
+						"10",
+						"6"
+					],
+					"port": "5001",
+					"path": [
+						"clear_device_history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
