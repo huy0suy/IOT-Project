@@ -1,0 +1,89 @@
+.dashboard-outdoor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #f7f9fc;
+}
+
+.sensor-display-and-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    align-items: center; /* Để các phần tử căn giữa và nằm cùng 1 hàng */
+}
+
+.sensor-display {
+    text-align: center;
+    font-size: 24px; /* Để hiển thị nhiệt độ ngoài trời rõ ràng hơn */
+    padding: 20px;
+    background-color: #ffffff; /* Màu nền cho khuôn */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 600px; /* Thu nhỏ chiều ngang khung outdoor temperature */
+}
+
+.sensor-display i {
+    font-size: 40px; /* Icon nhiệt độ */
+    color: #3f51b5; /* Màu của icon nhiệt độ */
+}
+
+.chart-container {
+    width: 75%; /* Tăng chiều rộng của chart */
+    height: 500x; /* Tăng chiều cao của chart */
+    margin-top: 20px;
+}
+
+.led-controls {
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa 2 nút */
+    margin-right: 20px; /* Di chuyển sang trái 20px */
+}
+
+.led-controls button {
+    width: 220px;
+    height: 80px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.led-controls button i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.led-controls button:hover {
+    background-color: #004494;
+    color: white;
+}
+
+.led-controls button:active {
+    background-color: #fefefe;
+}
+
+.led-controls button.on {
+    background-color: #ffffff;
+    color: black; /* Chữ "Bật/Tắt đèn" sẽ có màu đen khi bật */
+}
+
+.led-controls button.off {
+    background-color: #fafafa;
+    color: black; /* Chữ "Bật/Tắt đèn" sẽ có màu đen khi tắt */
+}

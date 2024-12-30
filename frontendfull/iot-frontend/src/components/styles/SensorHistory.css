@@ -1,0 +1,162 @@
+/* General container styling */
+.container-data {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #f9fbfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-data h1 {
+    color: #2d3a4b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+/* Filter container styling */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.filter-container input,
+.filter-container select {
+    padding: 10px;
+    border: 1px solid #c3cfd9;
+    border-radius: 6px;
+    background-color: #ffffff;
+    width: 180px;
+    font-size: 0.9em;
+    color: #5a6673;
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #eceff1;
+}
+
+.btn-exit-clear {
+    background-color: #d9534f;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn-exit-clear:hover {
+    background-color: #c9302c;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    color: #333;
+    font-size: 0.95em;
+    border-bottom: 1px solid #eaeff2;
+}
+
+table th {
+    background-color: #e3e7eb;
+    color: #5a6673;
+    font-weight: 600;
+}
+
+table tbody tr:hover {
+    background-color: #f5f9fc;
+}
+
+.page-number.active {
+    background-color: #428bca;
+    color: #ffffff;
+}
+
+/* Rows per page and pagination styling */
+.rows-per-page,
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    background-color: #428bca;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #357ab8;
+}
+
+.pagination button:disabled {
+    background-color: #c3d1df;
+    cursor: not-allowed;
+}
+
+.pagination button.active {
+    background-color: #286090;
+    font-weight: bold;
+}
+/* Container for date fields to align Start Date and End Date on the same line */
+.date-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.date-container label {
+    margin: 0;
+    font-weight: bold;
+}
+
+.date-container input {
+    width: 150px;
+}
+/* Style for the Delete Data button */
+.button-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-delete:hover {
+    background-color: #c0392b;
+}

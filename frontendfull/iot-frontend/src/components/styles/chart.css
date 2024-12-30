@@ -1,0 +1,69 @@
+/* src/styles/Dashboard.css */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.dashboard-functions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.chart-and-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.dashboard-charts {
+    flex: 1;
+    max-width: 100%; /* Make the chart occupy full width */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9fafc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls button {
+    width: 60px; /* Adjust button width */
+    height: 60px; /* Adjust button height */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.controls button i {
+    font-size: 30px; /* Adjust icon size */
+    margin-right: 20px;
+}
+
+.controls button:hover {
+    background-color: #004494;
+}
+
+.controls button:active {
+    background-color: #003366;
+}
